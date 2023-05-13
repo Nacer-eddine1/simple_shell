@@ -154,7 +154,7 @@ Aderinlola and I started the project by learning the concepts. The first part, h
 ## Cloning the repo
 To clone thid repository, run the command:
 ```
-git clone ??????
+git clone git@github.com:Nacer-eddine1/simple_shell.git
 ```
 
 ## Authors
