@@ -152,7 +152,7 @@ Aderinlola and I started the project by learning the concepts. The first part, h
 | <img width="50" height="50" src=./pictures/logo_emacs.png> | <img width="55" height="55" src=./pictures/logo_google_doc.png> | <img width="55" height="55" src=./pictures/logo-vim.png>
 
 ## Cloning the repo
-To clone thid repository, run the command:
+To clone this repository, run the command:
 ```
 git clone git@github.com:Nacer-eddine1/simple_shell.git
 ```
@@ -161,4 +161,4 @@ git clone git@github.com:Nacer-eddine1/simple_shell.git
 
 | Nacereddine Kheireddine | Aderinlola Daramola |
 |:---:|:---:|
-|<a href="https://www.linkedin.com/in/k-nacereddine/"> <img alt="NACER-EDDINE KHEIREDDINE Linkedin" width="40px" src=./pictures/logo_linkedin.png> <a href="https://github.com/Nacer-eddine1"> <img alt="NACER-EDDINE KHEIREDDINE Github" width="40px" src=./pictures/logo_github.png> | <a href="https://www.linkedin.com/in/aderinlola-daramola-4974a823a/"> <img alt="Aderinlola Daramola Linkedin" width="40px" src=./pictures/logo_linkedin.png> <a href="#"> <img alt="Aderinlola Daramola Github" width="40px" src=./pictures/logo_github.png> |
+|<a href="https://www.linkedin.com/in/k-nacereddine/"> <img alt="NACER-EDDINE KHEIREDDINE Linkedin" width="40px" src=./pictures/logo_linkedin.png> <a href="https://github.com/Nacer-eddine1"> <img alt="NACER-EDDINE KHEIREDDINE Github" width="40px" src=./pictures/logo_github.png> | <a href="https://www.linkedin.com/in/aderinlola-daramola-4974a823a/"> <img alt="Aderinlola Daramola Linkedin" width="40px" src=./pictures/logo_linkedin.png> <a href="https://github.com/Aderynlola"> <img alt="Aderinlola Daramola Github" width="40px" src=./pictures/logo_github.png> |
