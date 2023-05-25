@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * interactive - returns true if shell is interactive mode
- * @info: struct address
+ * interactive - returns true if the shell is in the interactive mode
+ * @info: struct adrs
  *
- * Return: 1 if interactive mode, 0 otherwise
+ * Return: 1 if it's interactive mode, otherwise 0
  */
 int interactive(info_t *info)
 {
@@ -12,28 +12,28 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if character is a delimeter
- * @c: the char to check
- * @delim: the delimeter string
- * Return: 1 if true, 0 if false
+ * is_delim - will check if the character is a delimeter or not
+ * @ch: is the character to check it
+ * @delim: is the delimeter str
+ * Return: 1 if it's true, 0 if it's false
  */
-int is_delim(char c, char *delim)
+int is_delim(char ch, char *delim)
 {
 	while (*delim)
-		if (*delim++ == c)
+		if (*delim++ == ch)
 			return (1);
 	return (0);
 }
 
 /**
  *_isalpha - checks for alphabetic character
- *@c: The character to input
- *Return: 1 if c is alphabetic, 0 otherwise
+ *@ch: The character to input
+ *Return: 1 if c is an alphabetic, 0 if not
  */
 
-int _isalpha(int c)
+int _isalpha(int ch)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
 		return (1);
 	else
 		return (0);
@@ -41,34 +41,34 @@ int _isalpha(int c)
 
 /**
  *_atoi - converts a string to an integer
- *@s: the string to be converted
- *Return: 0 if no numbers in string, converted number otherwise
+ *@str: the string to be converted
+ *Return: 0 if no numbers in a string, the converted number otherwise
  */
 
-int _atoi(char *s)
+int _atoi(char *str)
 {
-	int i, sign = 1, flag = 0, output;
-	unsigned int result = 0;
+	int i, sin = 1, flg = 0, outpt;
+	unsigned int rslt = 0;
 
-	for (i = 0;  s[i] != '\0' && flag != 2; i++)
+	for (i = 0;  str[i] != '\0' && flg != 2; i++)
 	{
-		if (s[i] == '-')
-			sign *= -1;
+		if (str[i] == '-')
+			sin *= -1;
 
-		if (s[i] >= '0' && s[i] <= '9')
+		if (str[i] >= '0' && str[i] <= '9')
 		{
-			flag = 1;
-			result *= 10;
-			result += (s[i] - '0');
+			flg = 1;
+			rslt *= 10;
+			rslt += (str[i] - '0');
 		}
-		else if (flag == 1)
-			flag = 2;
+		else if (flg == 1)
+			flg = 2;
 	}
 
-	if (sign == -1)
-		output = -result;
+	if (sin == -1)
+		outpt = -rslt;
 	else
-		output = result;
+		outpt = rslt;
 
-	return (output);
+	return (outpt);
 }
