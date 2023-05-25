@@ -6,37 +6,10 @@
  *
  * Return: 1 if it's interactive mode, otherwise 0
  */
+
 int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
-}
-
-/**
- * is_delim - will check if the character is a delimeter or not
- * @ch: is the character to check it
- * @delim: is the delimeter str
- * Return: 1 if it's true, 0 if it's false
- */
-int is_delim(char ch, char *delim)
-{
-	while (*delim)
-		if (*delim++ == ch)
-			return (1);
-	return (0);
-}
-
-/**
- *_isalpha - checks for alphabetic character
- *@ch: The character to input
- *Return: 1 if c is an alphabetic, 0 if not
- */
-
-int _isalpha(int ch)
-{
-	if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-		return (1);
-	else
-		return (0);
 }
 
 /**
@@ -71,4 +44,26 @@ int _atoi(char *str)
 		outpt = rslt;
 
 	return (outpt);
+}
+
+/**
+ * is_delim - will check if the character is a delimeter or not
+ * @ch: is the character to check it
+ * @delim: is the delimeter str
+ * Return: 1 if it's true, 0 if it's false
+ */
+int is_delim(char ch, char *delim)
+{
+	while (*delim)
+		if (*delim++ == ch)
+			return (1);
+	return (0);
+}
+
+int _isalpha(int ch)
+{
+	if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
