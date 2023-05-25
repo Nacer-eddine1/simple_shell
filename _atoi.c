@@ -18,7 +18,7 @@ int interactive(info_t *info)
  *Return: 0 if no numbers in a string, the converted number otherwise
  */
 
-int _atoi(char *str)
+// int _atoi(char *str)
 {
 	int i, sin = 1, flg = 0, outpt;
 	unsigned int rslt = 0;
